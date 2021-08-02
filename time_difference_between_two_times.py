@@ -1,0 +1,21 @@
+h1=int(input("Enter the first time's hour : "))
+m1=int(input("Enter the first time's minutes : "))
+s1=int(input("Enter the first time's seconds : "))
+h2=int(input("Enter the second time's hour : "))
+m2=int(input("Enter the second time's minutes : "))
+s2=int(input("Enter the second time's seconds : "))
+
+T1=((h1*60*60)+(m1*60)+s1)
+print('T1 = ', T1)
+T2=((h2*60*60)+(m2*60)+s2)
+print('T2 = ',T2)
+T=T1-T2
+print('T = ',T)
+Rs=T//3600
+print('Rs = ',Rs)
+Ms=T%3600
+print('Ms = ',Ms)
+MS=Ms//60
+print('MS = ',MS)
+Ss=Ms%60
+print('Ss = ',Ss)
